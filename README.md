@@ -1,9 +1,7 @@
-![logo_pointec](https://user-images.githubusercontent.com/46358065/83303531-9187f800-a1d3-11ea-8e77-9484af6305a1.png?style=centerme)
+<p align="center">
+  <img width="405" height="69" src="https://user-images.githubusercontent.com/46358065/83305364-fc86fe00-a1d6-11ea-8482-ccc8ce2fec8b.png" />
+</p>
 
-# Template POINTEC Basic
+<h1 align="center">Template POINTEC Basic</h1>
+
 > Projeto para a criação de um template para agilizar na hora de iniciar um projeto React Native
-
-img[src$="centerme"] {
-  margin: 0 auto;
-  display: block;
-}
