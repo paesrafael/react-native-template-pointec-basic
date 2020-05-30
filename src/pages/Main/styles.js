@@ -10,6 +10,7 @@ const Container = styled.View`
 const Image = styled.Image``
 
 const Title = styled.Text`
+  margin-top: 15px;
   color: #FFF;
   font-size: 18px;
 `
