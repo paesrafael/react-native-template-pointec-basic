@@ -7,7 +7,10 @@ const Stack = createStackNavigator()
 
 export default function Routes() {
   return (
-    <Stack.Navigator initialRouteName="Main">
+    <Stack.Navigator
+      initialRouteName="Main"
+      screenOptions={{headerShown: false}}
+    >
       <Stack.Screen name="Main" component={MainRoutes} />
     </Stack.Navigator>
   )

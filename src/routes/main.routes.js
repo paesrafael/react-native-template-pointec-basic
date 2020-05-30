@@ -7,7 +7,10 @@ const Tab = createStackNavigator()
 
 export default function MainRoutes() {
   return (
-    <Tab.Navigator initialRouteName="Main">
+    <Tab.Navigator
+      initialRouteName="Main"
+      screenOptions={{headerShown: false}}
+    >
       <Tab.Screen
         name="Main"
         component={MainScreen}
