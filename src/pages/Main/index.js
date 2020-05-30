@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '~/assets/Pointec_Logo.png'
+import logo from '~/assets/pointec-logo.png'
 
 import {
   Container, Image, Title
