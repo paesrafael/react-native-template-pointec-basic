@@ -1,0 +1,24 @@
+{
+  "name": "react-native-template-pointec-basic",
+  "version": "0.0.1",
+  "description": "Template para projetos React Native.",
+  "keywords": [
+    "react-native",
+    "template",
+    "pointec",
+    "eslint",
+    "react-navigation",
+    "babel-root-import",
+    "axios"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paesrafael/react-native-template-pointec-basic.git"
+  },
+  "homepage": "https://github.com/paesrafael/react-native-template-pointec-basic#readme",
+  "author": {
+    "name": "Rafael Paes",
+    "email": "rafael@pointec.dev"
+  },
+  "license": "MIT"
+}
