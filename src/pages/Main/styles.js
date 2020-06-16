@@ -16,5 +16,5 @@ const Title = styled.Text`
 `
 
 export {
-  Container, Image
+  Container, Image, Title
 }
