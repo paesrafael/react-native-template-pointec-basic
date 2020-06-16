@@ -7,4 +7,4 @@ deploy:
     secure: $API_KEY
   on:
     tags: true
-    repo: paesrafael/react-native-template-pointec.basic
+    repo: paesrafael/react-native-template-pointec-basic
