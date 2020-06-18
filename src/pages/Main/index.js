@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from '~/assets/pointec-logo.png'
 
+import Details from '~/components/Details'
+
 import {
   Container, Image, Title
 } from './styles'
@@ -10,6 +12,8 @@ export default function Main() {
     <Container>
       <Image source={logo} />
       <Title>Bem vindo(a) ao template Basic da POINTEC</Title>
+
+      <Details />
     </Container>
   )
 }
