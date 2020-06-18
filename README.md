@@ -68,6 +68,9 @@ pointec-basic
 │   │   └── pointec_logo@2x.png
 │   │   └── pointec_logo@3x.png
 │   ├── components/
+│   │   └── Details/
+│   │       └── index.js
+│   │       └── styles.js
 │   ├── config/
 │   │   └── index.js
 │   ├── pages/
