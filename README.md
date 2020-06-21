@@ -38,7 +38,11 @@ O templete inclui os seguites pacotes:
   - [babel-plugin-transform-remove-console](https://github.com/babel/minify/tree/master/packages/babel-plugin-transform-remove-console) - Esse plugin do Babel remove todos os console.\* da sua aplicação ([Dica no site oficial do RN](https://facebook.github.io/react-native/docs/performance#using-consolelog-statements));
 - [ESLint](https://eslint.org/) - O ESLint é uma ferramenta de lint plugável para JavaScript e JSX;
   - [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) - Este pacote fornece o .eslintrc do Airbnb como uma configuração compartilhada extensível;
+  - [eslint-config-standard](https://github.com/standard/standard) - Este pacote fornece ao .eslintrc a configuração Standard;
   - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) - Plugin do ESLint com regras para ajudar na validação de imports;
+  - [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) - Regras adicionais do ESlint para o Node.js;
+  - [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise) - Impor práticas recomendadas para promises do JS;
+  - [eslint-plugin-standard](https://github.com/standard/eslint-plugin-standard) - Regras Standard básicas para o ESlint;
   - [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) - Verificador estático AST das regras do a11y em elementos JSX;
   - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) - Regras de linting do ESLint específicas do React;
   - [eslint-plugin-react-native](https://github.com/Intellicode/eslint-plugin-react-native) - Regras de linting do ESLint específicas do React Native;
