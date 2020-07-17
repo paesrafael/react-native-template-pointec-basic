@@ -27,7 +27,8 @@
     "react-native",
     "jsx-a11y",
     "import",
-    "prettier"
+    "prettier",
+    "import-helpers"
   ],
   "rules": {
     "prettier/prettier": "error",
@@ -46,7 +47,21 @@
     "react-native/no-color-literals": "off",
     "react-native/sort-styles": "off",
     "global-require": "off",
-    "react-native/no-raw-text": "off"
+    "react-native/no-raw-text": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react/",
+          "module",
+          "/^~/services/",
+          "/^~/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
   },
   "settings": {
     "import/resolver": {

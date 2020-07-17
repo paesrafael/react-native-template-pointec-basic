@@ -40,6 +40,7 @@ O templete inclui os seguites pacotes:
   - [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) - Este pacote fornece o .eslintrc do Airbnb como uma configuração compartilhada extensível;
   - [eslint-config-standard](https://github.com/standard/standard) - Este pacote fornece ao .eslintrc a configuração Standard;
   - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) - Plugin do ESLint com regras para ajudar na validação de imports;
+  - [eslint-plugin-import-helpers](https://github.com/Tibfib/eslint-plugin-import-helpers) - Regras para ordenação automática dos módulos de imports;
   - [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) - Regras adicionais do ESlint para o Node.js;
   - [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise) - Impor práticas recomendadas para promises do JS;
   - [eslint-plugin-standard](https://github.com/standard/eslint-plugin-standard) - Regras Standard básicas para o ESlint;
@@ -144,6 +145,12 @@ public class MainActivity extends ReactActivity {
     };
   }
 }
+```
+
+## Configuração dos Módulos de imports (eslint-plugin-import-helpers)
+Para a ordenação automática dos imports, criamos no ``eslintrc.json`` um padrão de configuração.
+```
+Você pode adaptar conforme suas necessidades.
 ```
 
 ## Contribuição
