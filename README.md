@@ -1,3 +1,9 @@
+[![Version](https://img.shields.io/npm/v/react-native-template-pointec-basic.svg?label=version)](https://www.npmjs.com/package/react-native-template-pointec-basic)
+[![NPM Download](https://img.shields.io/npm/dt/react-native-template-pointec-basic.svg)](https://www.npmjs.com/package/react-native-template-pointec-basic)
+[![GitHub Issues](https://img.shields.io/github/issues-raw/paesrafael/react-native-template-pointec-basic.svg)](https://github.com/paesrafael/react-native-template-pointec-basic/issues)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/paesrafael/react-native-template-pointec-basic.svg)](https://github.com/paesrafael/react-native-template-pointec-basic/commits/master)
+[![Licenses](https://img.shields.io/npm/l/react-native-template-pointec-basic.svg)](https://choosealicense.com/licenses/mit)
+
 <p align="center">
   <a href="htts://pointec.dev" target="_blank">
     <img width="405" height="69" src="https://assets.pointec.dev/image/pointec-logo-site.png" alt="POINTEC IT SOLUTIONS logo" />
