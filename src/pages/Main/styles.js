@@ -10,7 +10,7 @@ const Container = styled.View`
 const Image = styled.Image``
 
 const Title = styled.Text`
-  margin-top: 15px;
+  margin: ${props => props.margin ? props.margin : '0'};
   color: #FFF;
   font-size: 18px;
 `
