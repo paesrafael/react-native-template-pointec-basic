@@ -9,10 +9,25 @@
     <img width="405" height="69" src="https://assets.pointec.dev/image/pointec-logo-site.png" alt="POINTEC IT SOLUTIONS logo" />
   </a>
 
-  <h1 align="center">Template POINTEC Basic</h1>
+  <h2 align="center">Template POINTEC Basic</h2>
 </p>
 
+# Tabela de conteúdo
+
+- [Sobre o projeto](#sobre-o-projeto)
+  - [Feito com](#feito-com)
+- [Iniciando](#iniciando)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Estrutura de arquivos](#estrutura-de-arquivos)
+  - [Instalação](#instalação)
+    - [Passo adicional no Android](#passo-adicional-no-android)
+- [Configuração dos Módulos de import](<#configuração-dos-módulos-de-imports-(eslint-plugin-import-helpers)>)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+- [Contato](#contato)
+
 ## Sobre o projeto
+
 Projeto para a criação de um template do React Native. Agilizando na hora de iniciar um novo projeto, facilitando o fluxo de desenvolvimento.
 
 ## Feito com
@@ -154,7 +169,9 @@ public class MainActivity extends ReactActivity {
 ```
 
 ## Configuração dos Módulos de imports (eslint-plugin-import-helpers)
-Para a ordenação automática dos imports, criamos no ``eslintrc.json`` um padrão de configuração.
+
+Para a ordenação automática dos imports, criamos no `eslintrc.json` um padrão de configuração.
+
 ```
 Você pode adaptar conforme suas necessidades.
 ```
