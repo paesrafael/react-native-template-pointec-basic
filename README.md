@@ -10,12 +10,13 @@
   </a>
 
   <h2 align="center">Template POINTEC Basic</h2>
+  <h3 align="center">Está gostando do projeto? Deixe sua estrela :)</h3>
 </p>
 
 # Tabela de conteúdo
 
 - [Sobre o projeto](#sobre-o-projeto)
-  - [Feito com](#feito-com)
+  - [Packages inclusos](#packages-inclusos)
 - [Iniciando](#iniciando)
   - [Pré-requisitos](#pré-requisitos)
   - [Estrutura de arquivos](#estrutura-de-arquivos)
@@ -30,7 +31,7 @@
 
 Projeto para a criação de um template do React Native. Agilizando na hora de iniciar um novo projeto, facilitando o fluxo de desenvolvimento.
 
-## Feito com
+## Packages inclusos
 
 O templete inclui os seguites pacotes:
 
