@@ -16,5 +16,7 @@
   "eslint-plugin-react-native": "latest",
   "prettier": "latest",
   "eslint-plugin-prettier": "latest",
-  "eslint-config-prettier": "latest"
+  "eslint-config-prettier": "latest",
+  "husky": "latest",
+  "lint-staged": "latest"
 }

@@ -1,0 +1,7 @@
+#!/bin/bash
+. "$(dirname "$0")/_/husky.sh"
+
+# Descomentar (linha 7) se precisar utilizar
+# Ou crie um aliases para chamar o "yarn commit" que está no script do package.json
+# Aliases exemplo: yarncommit='yarn commit'
+# exec < /dev/tty && yarn git-cz --hook || true

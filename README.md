@@ -15,17 +15,22 @@
 
 # Tabela de conteúdo
 
-- [Sobre o projeto](#sobre-o-projeto)
+- [Tabela de conteúdo](#tabela-de-conteúdo)
+  - [Sobre o projeto](#sobre-o-projeto)
   - [Packages inclusos](#packages-inclusos)
-- [Iniciando](#iniciando)
-  - [Pré-requisitos](#pré-requisitos)
-  - [Estrutura de arquivos](#estrutura-de-arquivos)
-  - [Instalação](#instalação)
-    - [Passo adicional no Android](#passo-adicional-no-android)
-- [Configuração dos Módulos de import](<#configuração-dos-módulos-de-imports-(eslint-plugin-import-helpers)>)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
-- [Contato](#contato)
+  - [Iniciando](#iniciando)
+    - [Pré-requisitos](#pré-requisitos)
+    - [Estrutura de arquivos](#estrutura-de-arquivos)
+    - [Instalação](#instalação)
+      - [Passo Adicional no Android](#passo-adicional-no-android)
+- [Passo adicional para o Husky e Lint-staged](#passo-adicional-para-o-husky-e-lint-staged)
+  - [Configuração do Husky e Lint-staged](#configuração-do-husky-e-lint-staged)
+  - [Ajustando o commitlint.config](#ajustando-o-commitlintconfig)
+- [Configuração dos Módulos de imports (eslint-plugin-import-helpers)](#configuração-dos-módulos-de-imports-eslint-plugin-import-helpers)
+- [Ajuda](#ajuda)
+  - [Contribuição](#contribuição)
+  - [Licença](#licença)
+  - [Contato](#contato)
 
 ## Sobre o projeto
 
@@ -74,6 +79,8 @@ O templete inclui os seguites pacotes:
   - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) - Roda o Prettier como uma regra do ESLint;
   - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) - Desativa todas as regras que são desnecessárias ou que podem dar conflito com o Prettier;
 - [EditorConfig](https://editorconfig.org/) - O EditorConfig é um formatador de arquivos e coleções em forma de Plugin para Editores de código/texto com o objetivo de manter um padrão de código consistente entre diferentes editores, IDE's ou ambientes;
+- [Husky](https://github.com/typicode/husky) - O Husky é usado para ganchos do Git, podendo impedir um commit ruim, push e mais.
+- [Lint-staged](https://github.com/okonet/lint-staged) - Evite erros enviados para o repositório do Git, execute uma validação antes do commit.
 
 ## Iniciando
 
@@ -89,6 +96,11 @@ A estrutura dos arquivos está conforme abaixo:
 
 ```bash
 pointec-basic
+├── .husky/
+│   ├── _/
+│   ├── commit-msg
+│   ├── pre-commit
+│   ├── prepare-commit-msg
 ├── src/
 │   ├── assets/
 │   │   ├── pointec_logo.png
@@ -116,6 +128,7 @@ pointec-basic
 ├── .prettierrc.js
 ├── .travis.yml
 ├── babel.config.js
+├── commitlint.config
 ├── dependencies.json
 ├── devDependencies.json
 ├── index.js
@@ -169,13 +182,94 @@ public class MainActivity extends ReactActivity {
 }
 ```
 
-## Configuração dos Módulos de imports (eslint-plugin-import-helpers)
+# Passo adicional para o Husky e Lint-staged
+
+Se você for utilizar o Husky e o Lint-staged, você precisa instalar globalmente/localmente os pacotes:
+
+- commitizen
+- @commitlint/cli
+- @commitlint/config-conventional
+- cz-conventional-changelog
+
+```
+yarn global add commitizen
+```
+
+```
+yarn global add @commitlint/cli @commitlint/config-conventional
+```
+
+```
+yarn global add cz-conventional-changelog
+```
+
+É possível instalar local ao invés de global.
+
+Você também pode utilizar o NPM para instalar.
+
+## Configuração do Husky e Lint-staged
+
+Adicione em seu `package.json` o seguinte:
+```
+  "scripts": {
+    "eslintfix": "eslint --fix",
+    "prettiercheck": "prettier --write",
+    "commit": "git-cz"
+  },
+  "lint-staged": {
+    "*@(js)": [
+      "yarn eslintfix",
+      "yarn prettiercheck"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+```
+
+Há configurações na pasta `.husky`.
+
+```
+Você pode ajustar o package.json e os arquivos da pasta do .husky conforme as suas necessidades.
+```
+
+## Ajustando o commitlint.config
+
+Quando for utilizado a instalação dos pacotes acima **globalmente**, configurar o arquivo da seguinte forma:
+
+```
+# Alterar o 'C:/Users/Rafael/AppData/Local/Yarn/Data/global/node_modules/'
+# Para o caminho do seu usuário e da pasta de instalação
+
+module.exports = {
+  extends: ['C:/Users/Rafael/AppData/Local/Yarn/Data/global/node_modules/@commitlint/config-conventional'],
+}
+```
+
+Obs.: Solução temporária e não é a melhor forma de corrigir.
+
+Se for feito **localmente**, utilizar a seguinte configuração:
+
+```
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
+}
+```
+
+Solução para o erro da [`issue #613`](https://github.com/conventional-changelog/commitlint/issues/613).
+
+# Configuração dos Módulos de imports (eslint-plugin-import-helpers)
 
 Para a ordenação automática dos imports, criamos no `eslintrc.json` um padrão de configuração.
 
 ```
-Você pode adaptar conforme suas necessidades.
+Você pode ajustar conforme as suas necessidades.
 ```
+
+# Ajuda
+Você pode ajudar o projeto, veja abaixo como contribuir.
 
 ## Contribuição
 
